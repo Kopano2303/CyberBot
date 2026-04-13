@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Media;
 
 namespace CyberBot
 {
@@ -10,6 +11,7 @@ namespace CyberBot
     {
         public static void Run()
         {
+            PlayGreeting();
             Console.WriteLine("CyberSecurity Awareness");
             Console.WriteLine("Stay safe online!");
 
@@ -90,6 +92,18 @@ namespace CyberBot
                 }
             }
 
+        }
+        public static void PlayGreeting()
+        {
+            try
+            {
+                SoundPlayer player = new SoundPlayer("welcome.wav");
+                player.PlaySync();
+            }
+            catch
+            {
+                Console.WriteLine("Could not play audio.");
+            }
         }
     }
 }
