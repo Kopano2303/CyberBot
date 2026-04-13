@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "TBhXtlNAyh4=",
+  "dgSpecHash": "1CbVnjVqOSI=",
   "success": true,
   "projectFilePath": "C:\\Users\\Student\\Desktop\\CyberBot\\CyberBot\\CyberBot\\CyberBot.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Student\\.nuget\\packages\\system.windows.extensions\\10.0.5\\system.windows.extensions.10.0.5.nupkg.sha512"
+  ],
   "logs": []
 }
