@@ -35,7 +35,7 @@ U /""___| \ \ / /U | __"")u\| ___""|/U |  _""\ u / __""| u\| ___""|/U /""___|U |
         {
             if (input.Contains("how are you"))
             {
-                Console.WriteLine("Im Good thanks for asking" + name);
+                Console.WriteLine("Im Good thanks for asking" +" "+ name);
             }
             else if (input.Contains("purpose"))
             {

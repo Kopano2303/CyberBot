@@ -12,6 +12,7 @@ namespace CyberBot
         public static void Run()
         {
             PlayGreeting();
+            Console.Title = "CyberBot - Security Assistant";
             Console.WriteLine("CyberSecurity Awareness");
             Console.WriteLine("Stay safe online!");
 
@@ -25,7 +26,7 @@ namespace CyberBot
 
             CbBot bot = new CbBot(Name);
 
-            Console.WriteLine("Hey" + Name);
+            Console.WriteLine("Hey" +" "+ Name);
             Console.WriteLine("Welcome to Cybersecurity Awareness!");
             Console.WriteLine("Enter 1 to continue");
             Console.WriteLine("Enter 0 or Exit to Quit");
@@ -97,7 +98,7 @@ namespace CyberBot
         {
             try
             {
-                SoundPlayer player = new SoundPlayer("@\"C:\\Users\\Student\\Desktop\\CyberBot\\CyberBot\\welcome.wav\"");
+                SoundPlayer player = new SoundPlayer(@"C:\Users\Student\Desktop\CyberBot\CyberBot\welcome.wav");
                 player.PlaySync();
             }
             catch
