@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
-using System.Media;
+using System.Xml.Linq;
 
 namespace CyberBot
 {
@@ -11,35 +12,38 @@ namespace CyberBot
     {
         public static void Run()
         {
+            ConsoleUI.SetTitle("CyberBot - Security Assistant");
             PlayGreeting();
-            Console.Title = "CyberBot - Security Assistant";
-            Console.WriteLine("CyberSecurity Awareness");
-            Console.WriteLine("Stay safe online!");
+            
+            ConsoleUI.DrawHeader("CyberSecurity Awareness");
+            Console.WriteLine("Stay safe online! \n",  ConsoleColor.Yellow);
 
-            Console.WriteLine("Enter your Name:");
-            string Name = Console.ReadLine();
+            //Console.WriteLine("Enter your Name:", ConsoleColor.Cyan);
+            string Name = ConsoleUI.GetInput("Enter your name: ", ConsoleColor.Cyan); 
 
             if (string.IsNullOrWhiteSpace(Name))
                 Name = "User";
 
-            Console.Clear();
+            ConsoleUI.Clear();
 
             CbBot bot = new CbBot(Name);
 
-            Console.WriteLine("Hey" +" "+ Name);
+            ConsoleUI.DrawHeader($"WELCOME, {Name.ToUpper()}"); 
             Console.WriteLine("Welcome to Cybersecurity Awareness!");
-            Console.WriteLine("Enter 1 to continue");
-            Console.WriteLine("Enter 0 or Exit to Quit");
+            ConsoleUI.WriteLine("1 → Start Chat", ConsoleColor.Green); 
+            ConsoleUI.WriteLine("0 → Exit\n", ConsoleColor.Red); 
+
 
 
             while (true)
             {
-                Console.Write("Choice: ");
-                string choice = Console.ReadLine()?.ToLower();
+                //Console.Write("Choice: ");
+                string choice = ConsoleUI.GetInput("Choice: ", ConsoleColor.Cyan);
+                //string choice = Console.ReadLine()?.ToLower();
 
                 if (choice == "1")
                 {
-                    Console.Clear();
+                    ConsoleUI.Clear();
 
                     while (true)
                     {
@@ -68,7 +72,7 @@ namespace CyberBot
                         }
                         else if (next == "0")
                         {
-                            Console.Clear();
+                            ConsoleUI.Clear();
                             break;
                         }
                         else if (next == "exit")

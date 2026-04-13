@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{AFA0739B-1331-43E2-A4C9-B2A8BC4E30BF}|CyberBot\\CyberBot.csproj|solutionrelative:cyberbot\\botui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{AFA0739B-1331-43E2-A4C9-B2A8BC4E30BF}|CyberBot\\CyberBot.csproj|c:\\users\\student\\desktop\\cyberbot\\cyberbot\\cyberbot\\consoleui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFA0739B-1331-43E2-A4C9-B2A8BC4E30BF}|CyberBot\\CyberBot.csproj|solutionrelative:cyberbot\\consoleui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AFA0739B-1331-43E2-A4C9-B2A8BC4E30BF}|CyberBot\\CyberBot.csproj|c:\\users\\student\\desktop\\cyberbot\\cyberbot\\cyberbot\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFA0739B-1331-43E2-A4C9-B2A8BC4E30BF}|CyberBot\\CyberBot.csproj|solutionrelative:cyberbot\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,7 +30,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Student\\Desktop\\CyberBot\\CyberBot\\CyberBot\\Program.cs",
               "RelativeDocumentMoniker": "CyberBot\\Program.cs",
@@ -34,8 +38,7 @@
               "RelativeToolTip": "CyberBot\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-10T09:57:09.584Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T09:57:09.584Z"
             },
             {
               "$type": "Document",
@@ -45,14 +48,14 @@
               "RelativeDocumentMoniker": "CyberBot\\BotUI.cs",
               "ToolTip": "C:\\Users\\Student\\Desktop\\CyberBot\\CyberBot\\CyberBot\\BotUI.cs",
               "RelativeToolTip": "CyberBot\\BotUI.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAAAHIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-13T04:34:32.704Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CbBot.cs",
               "DocumentMoniker": "C:\\Users\\Student\\Desktop\\CyberBot\\CyberBot\\CyberBot\\CbBot.cs",
               "RelativeDocumentMoniker": "CyberBot\\CbBot.cs",
@@ -60,7 +63,19 @@
               "RelativeToolTip": "CyberBot\\CbBot.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAowCEAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-13T04:38:33.956Z",
+              "WhenOpened": "2026-04-13T04:38:33.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConsoleUI.cs",
+              "DocumentMoniker": "C:\\Users\\Student\\Desktop\\CyberBot\\CyberBot\\CyberBot\\ConsoleUI.cs",
+              "RelativeDocumentMoniker": "CyberBot\\ConsoleUI.cs",
+              "ToolTip": "C:\\Users\\Student\\Desktop\\CyberBot\\CyberBot\\CyberBot\\ConsoleUI.cs",
+              "RelativeToolTip": "CyberBot\\ConsoleUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T12:17:56.587Z",
               "EditorCaption": ""
             }
           ]
