@@ -47,8 +47,8 @@ namespace CyberBot
                     while (true)
                     {
                         ConsoleUI.TypeEffect("You can ask me about how I am, passwords, phishing, links, and online safety.");
-                        Console.WriteLine("Ask a question:");
-                        Console.Write(Name + " : ");
+                        Console.WriteLine("Ask a question:", ConsoleColor.Green);
+                        Console.Write(" : ");
                         string input = Console.ReadLine();
 
                         if (string.IsNullOrWhiteSpace(input))
@@ -60,9 +60,9 @@ namespace CyberBot
                         bot.Respond(input, Name);
 
 
-                        Console.WriteLine("\nEnter 1 to ask another question");
-                        Console.WriteLine("Enter 0 to go back to menu");
-                        Console.WriteLine("Enter Exit to quit");
+                        Console.WriteLine("\nEnter 1 to ask another question", ConsoleColor.Green);
+                        //Console.WriteLine("Enter 0 to go back to menu", ConsoleColor.Green);
+                        Console.WriteLine("Enter Exit to quit", ConsoleColor.Red);
 
                         string next = Console.ReadLine()?.ToLower();
 
@@ -88,7 +88,7 @@ namespace CyberBot
                 }
                 else if (choice == "0" || choice == "exit")
                 {
-                    Console.WriteLine("Goodbye! Stay safe ");
+                    ConsoleUI.TypeEffect("Goodbye! Stay safe ");
                     break;
                 }
                 else
