@@ -101,7 +101,7 @@ namespace CyberBot
         {
             try
             {
-                SoundPlayer player = new SoundPlayer(@"C:\Users\Student\Desktop\CyberBot\CyberBot\welcome.wav");
+                SoundPlayer player = new SoundPlayer(@"C:\Users\Student\Desktop\CyberBot\CyberBot\CyberBot\welcome.wav");
                 player.PlaySync();
             }
             catch
