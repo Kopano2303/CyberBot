@@ -38,34 +38,34 @@ U /""___| \ \ / /U | __"")u\| ___""|/U |  _""\ u / __""| u\| ___""|/U /""___|U |
             if (input.Contains("how are you") || input.Contains("how are u") || input.Contains("are you okay"))
             {
                 ConsoleUI.TypeEffect(
-                    $"😊 I'm doing great, {name}! Thanks for asking.\n" +
+                    $" I'm doing great, {name}! Thanks for asking.\n" +
                     "I'm here to help you learn about staying safe online.\n\n" +
-                    "💡 You can ask me things like:\n" +
+                    " You can ask me things like:\n" +
                     "- What is phishing?\n" +
                     "- What is a strong password?\n" +
                     "- How do I browse safely?"
                 );
             }
 
-            else if (input.Contains("phishing"))
+            if (input.Contains("phishing"))
             {
                 ConsoleUI.TypeEffect(
                     " What is Phishing?\n" +
                     "Phishing is a type of cyber attack where attackers try to trick you into giving personal information like passwords or bank details.\n\n" +
 
-                    "⚙ How it works:\n" +
+                    " How it works:\n" +
                     "Attackers pretend to be trusted companies (like banks or email providers) and send fake messages.\n\n" +
 
                     " Example:\n" +
                     "You receive an email saying 'Your account has been locked. Click here to reset your password', but the link is fake.\n\n" +
 
-                    "🛡 How to stay safe:\n" +
+                    " How to stay safe:\n" +
                     "- Never click suspicious links\n" +
                     "- Check the sender's email\n" +
                     "- Do not share personal information"
                 );
             }
-            else if (input.Contains("password"))
+            if (input.Contains("password"))
             {
                 ConsoleUI.TypeEffect(
                     " What is a Strong Password?\n" +
@@ -83,7 +83,7 @@ U /""___| \ \ / /U | __"")u\| ___""|/U |  _""\ u / __""| u\| ___""|/U /""___|U |
                     "- Avoid personal info like names or birthdays"
                 );
             }
-            else if (input.Contains("safe browsing") || input.Contains("browse"))
+            if (input.Contains("safe browsing") || input.Contains("browse"))
             {
                 ConsoleUI.TypeEffect(
                     " What is Safe Browsing?\n" +
@@ -101,7 +101,7 @@ U /""___| \ \ / /U | __"")u\| ___""|/U |  _""\ u / __""| u\| ___""|/U /""___|U |
                     "- Avoid unknown downloads"
                 );
             }
-            else if (input.Contains("malware") || input.Contains("virus"))
+            if (input.Contains("malware") || input.Contains("virus"))
             {
                 ConsoleUI.TypeEffect(
                     " What is Malware?\n" +
@@ -120,7 +120,7 @@ U /""___| \ \ / /U | __"")u\| ___""|/U |  _""\ u / __""| u\| ___""|/U /""___|U |
                 );
             }
 
-            else if (input.Contains("link") || input.Contains("url"))
+            if (input.Contains("links") || input.Contains("url"))
             {
                 ConsoleUI.TypeEffect(
                     " What is a Suspicious Link?\n" +
@@ -138,7 +138,7 @@ U /""___| \ \ / /U | __"")u\| ___""|/U |  _""\ u / __""| u\| ___""|/U /""___|U |
                     "- Avoid shortened links"
                 );
             }
-            else if (input.Contains("privacy") || input.Contains("personal information"))
+            if (input.Contains("privacy") || input.Contains("personal information"))
             {
                 ConsoleUI.TypeEffect(
                     " What is Online Privacy?\n" +
@@ -156,7 +156,7 @@ U /""___| \ \ / /U | __"")u\| ___""|/U |  _""\ u / __""| u\| ___""|/U /""___|U |
                     "- Avoid public Wi-Fi for sensitive info"
                 );
             }
-            else if (input.Contains("help"))
+            if (input.Contains("help"))
             {
                 ConsoleUI.TypeEffect(
                     " Ask me questions like:\n\n" +
@@ -168,7 +168,7 @@ U /""___| \ \ / /U | __"")u\| ___""|/U |  _""\ u / __""| u\| ___""|/U /""___|U |
                     " Try asking full questions for better answers!"
                 );
             }
-            else
+            if 
             {
                 ConsoleUI.TypeEffect(
                     "I didn't understand that.\n" +

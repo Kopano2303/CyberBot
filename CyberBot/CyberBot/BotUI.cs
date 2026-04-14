@@ -45,7 +45,7 @@ namespace CyberBot
 
                     while (true)
                     {
-                        ConsoleUI.TypeEffect("You can ask me about how I am, passwords, phishing, links, and online safety.");
+                        ConsoleUI.TypeEffect("You can ask me about how I am, passwords, phishing, malware,url/link, privacy, and personal information.");
                         Console.WriteLine("Ask a question:", ConsoleColor.Green);
                         Console.Write(" : ");
                         string input = Console.ReadLine();
@@ -60,7 +60,7 @@ namespace CyberBot
 
 
                         Console.WriteLine("\nEnter 1 to ask another question", ConsoleColor.Green);
-                        //Console.WriteLine("Enter 0 to go back to menu", ConsoleColor.Green);
+                        Console.WriteLine("Enter 0 to go back to menu", ConsoleColor.Green);
                         Console.WriteLine("Enter Exit to quit", ConsoleColor.Red);
 
                         string next = Console.ReadLine()?.ToLower();
