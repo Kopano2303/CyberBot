@@ -8,7 +8,7 @@ namespace CyberBot
 {
     internal class ConsoleUI
     {
-        // ================= HEADER =================
+
         public static void DrawHeader(string title)
         {
             Console.ForegroundColor = ConsoleColor.Green;
@@ -18,7 +18,7 @@ namespace CyberBot
             Console.ResetColor();
         }
 
-        // ================= WRITE (NO NEW LINE) =================
+
         public static void Write(string text, ConsoleColor color)
         {
             Console.ForegroundColor = color;
@@ -26,7 +26,7 @@ namespace CyberBot
             Console.ResetColor();
         }
 
-        // ================= WRITELINE =================
+
         public static void WriteLine(string text, ConsoleColor color)
         {
             Console.ForegroundColor = color;
@@ -34,7 +34,7 @@ namespace CyberBot
             Console.ResetColor();
         }
 
-        // ================= DIVIDER =================
+
         public static void Divider()
         {
             Console.ForegroundColor = ConsoleColor.DarkGray;
@@ -42,7 +42,7 @@ namespace CyberBot
             Console.ResetColor();
         }
 
-        // ================= INPUT PROMPT =================
+
         public static string GetInput(string prompt, ConsoleColor color)
         {
             Console.ForegroundColor = color;
@@ -51,7 +51,7 @@ namespace CyberBot
             return Console.ReadLine();
         }
 
-        // ================= TYPE EFFECT =================
+       
         public static void TypeEffect(string text, int speed = 25)
         {
             foreach (char c in text)
@@ -62,16 +62,29 @@ namespace CyberBot
             Console.WriteLine();
         }
 
-        // ================= CLEAR SCREEN =================
+    
         public static void Clear()
         {
             Console.Clear();
         }
 
-        // ================= TITLE =================
+ 
         public static void SetTitle(string title)
         {
             Console.Title = title;
+        }
+
+        public static void DrawBox(string message, ConsoleColor color = ConsoleColor.Green)
+        {
+            Console.ForegroundColor = color;
+
+            string border = new string('─', message.Length + 4);
+
+            Console.WriteLine($"┌{border}┐");
+            Console.WriteLine($"│  {message}  │");
+            Console.WriteLine($"└{border}┘");
+
+            Console.ResetColor();
         }
     }
 }

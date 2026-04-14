@@ -18,7 +18,7 @@ namespace CyberBot
             ConsoleUI.DrawHeader("CyberSecurity Awareness");
             Console.WriteLine("Stay safe online! \n",  ConsoleColor.Yellow);
 
-            //Console.WriteLine("Enter your Name:", ConsoleColor.Cyan);
+            
             string Name = ConsoleUI.GetInput("Enter your name: ", ConsoleColor.Cyan); 
 
             if (string.IsNullOrWhiteSpace(Name))
@@ -28,8 +28,8 @@ namespace CyberBot
 
             CbBot bot = new CbBot(Name);
 
-            ConsoleUI.DrawHeader($"WELCOME, {Name.ToUpper()}"); 
-            Console.WriteLine("Welcome to Cybersecurity Awareness!");
+            ConsoleUI.DrawHeader("WELCOME," +" "+ Name.ToUpper());
+            ConsoleUI.DrawBox("Welcome to CyberSecurity Awareness", ConsoleColor.Green);
             ConsoleUI.WriteLine("1 → Start Chat", ConsoleColor.Green); 
             ConsoleUI.WriteLine("0 → Exit\n", ConsoleColor.Red); 
 
@@ -37,9 +37,8 @@ namespace CyberBot
 
             while (true)
             {
-                //Console.Write("Choice: ");
+      
                 string choice = ConsoleUI.GetInput("Choice: ", ConsoleColor.Cyan);
-                //string choice = Console.ReadLine()?.ToLower();
 
                 if (choice == "1")
                 {
@@ -47,6 +46,7 @@ namespace CyberBot
 
                     while (true)
                     {
+                        ConsoleUI.TypeEffect("You can ask me about how I am, passwords, phishing, links, and online safety.");
                         Console.WriteLine("Ask a question:");
                         Console.Write(Name + " : ");
                         string input = Console.ReadLine();
