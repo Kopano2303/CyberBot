@@ -12,8 +12,6 @@ namespace CyberBot
     {
         public static void Run()
         {
-
-            ConsoleUI.SetTitle("CyberBot - Security Assistant");
             PlayGreeting();
             
             ConsoleUI.DrawHeader("CyberSecurity Awareness");
