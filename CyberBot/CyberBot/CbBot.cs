@@ -168,7 +168,7 @@ U /""___| \ \ / /U | __"")u\| ___""|/U |  _""\ u / __""| u\| ___""|/U /""___|U |
                     " Try asking full questions for better answers!"
                 );
             }
-            if 
+            else
             {
                 ConsoleUI.TypeEffect(
                     "I didn't understand that.\n" +
