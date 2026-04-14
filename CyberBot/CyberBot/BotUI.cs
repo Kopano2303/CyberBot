@@ -12,11 +12,12 @@ namespace CyberBot
     {
         public static void Run()
         {
+
             ConsoleUI.SetTitle("CyberBot - Security Assistant");
             PlayGreeting();
             
             ConsoleUI.DrawHeader("CyberSecurity Awareness");
-            Console.WriteLine("Stay safe online! \n",  ConsoleColor.Yellow);
+            Console.WriteLine("Stay safe online!",  ConsoleColor.Cyan);
 
             
             string Name = ConsoleUI.GetInput("Enter your name: ", ConsoleColor.Cyan); 
